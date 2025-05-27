@@ -1,17 +1,18 @@
-body{
-    box-sizing: border-box;
-}
+
 #container{
     display: flex;
     flex-wrap: wrap;
     width: 800px;
+    
 }
 
 .square{
-    width: calc(800px /16);
-    height: calc(800px /16);
-    aspect-ratio: 1 / 1;
     border: 1px solid black;
     box-sizing: border-box;
+    background-color: white;
+    transition: background-color 0s;
+}
 
+.square.hovered{
+    background-color: black;
 }
